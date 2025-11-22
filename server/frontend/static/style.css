@@ -124,3 +124,16 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+
+.contact_info{
+    margin-right: 10%;
+}
+
+.contact_info > * {
+    color:#6793ea;
+    font-size:1.25rem;
+}
+
+.contact_info > h2 {
+    font-weight: bold;
+}
