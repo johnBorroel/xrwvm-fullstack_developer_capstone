@@ -123,8 +123,9 @@ const PostReview = () => {
                         <option value="" selected disabled hidden>
                             Choose Car Make and Model
                         </option>
-                        {carmodels.map((carmodel) => (
+                        {carmodels.map((carmodel, index) => (
                             <option
+                                key={index}
                                 value={
                                     carmodel.CarMake + " " + carmodel.CarModel
                                 }
@@ -138,7 +139,7 @@ const PostReview = () => {
                 <div className="input_field">
                     Car Year{" "}
                     <input
-                        type="int"
+                        type="number"
                         onChange={(e) => setYear(e.target.value)}
                         max={2023}
                         min={2015}
