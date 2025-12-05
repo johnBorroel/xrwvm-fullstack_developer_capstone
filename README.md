@@ -41,7 +41,6 @@ This capstone illustrates how to integrate external APIs (for sentiment analysis
 
 - **Backend:**
   - Python with Django (main application, REST APIs)
-  - Node.js with Express.js (data serving for dealerships and reviews)
 - **Frontend:**
   - React
   - HTML & CSS for static pages and styling
@@ -66,7 +65,7 @@ This capstone illustrates how to integrate external APIs (for sentiment analysis
 - [Docker](https://www.docker.com/)
 
 ### Installation
-
+**Note**: Some features such as Sentiment Analysis were provided by IBM as part of the capstone project. As such, the project will not work properly if run as is. This repo is for demonstration of the codebase used as part of the capstone project and to highlight the technical skills used.
 1. **Clone the repository:**
 
    ```bash
@@ -77,8 +76,8 @@ This capstone illustrates how to integrate external APIs (for sentiment analysis
 2. **Install backend dependencies:**
 
    ```bash
-   cd backend
-   pip install -r requirements.txt
+    cd server/djangoapp
+    pip install -r ../requirements.txt
    ```
 
 3. **Install frontend dependencies:**
@@ -91,9 +90,13 @@ This capstone illustrates how to integrate external APIs (for sentiment analysis
 ## Project Structure
 
 ```
-├── backend/         # Python backend (Flask/Django/FastAPI)
-├── frontend/        # Frontend (React/Vue/HTML/JS)
-├── docker/          # Dockerfiles and scripts
+├── server/
+│   ├── djangoapp/   # Python backend (Django)
+│   ├── djangoproj/  # Django project files
+│   ├── frontend/    # React frontend
+│   ├── Dockerfile   # Dockerfile for the project
+│   ├── requirements.txt
+│   ├── manage.py
 ├── README.md
 ├── .gitignore
 ```
