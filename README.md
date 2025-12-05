@@ -39,8 +39,13 @@ This capstone illustrates how to integrate external APIs (for sentiment analysis
 
 ## Tech Stack
 
-- **Backend:** Python (Flask/Django/FastAPI)
-- **Frontend:** JavaScript (React/Vue/Vanilla), HTML, CSS
+- **Backend:**
+  - Python with Django (main application, REST APIs)
+  - Node.js with Express.js (data serving for dealerships and reviews)
+- **Frontend:**
+  - React
+  - HTML & CSS for static pages and styling
+  - Bootstrap (styling and layout)
 - **Containerization:** Docker
 - **Others:** Shell scripts for automation
 
